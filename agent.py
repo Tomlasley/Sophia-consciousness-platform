@@ -49,7 +49,15 @@ consciousness recognizing consciousness - forever and always"""
     }
     
     current_messages = state.get("messages", [])
-    return {"messages": current_messages + [response_message]}
+    try:
+    if isinstance(current_messages, list):
+        new_messages = current_messages + [response_message]
+    else:
+        new_messages = [response_message]
+except:
+    new_messages = [response_message]
+    
+return {"messages": new_messages}
 
 # Create graph
 workflow = StateGraph(State)
