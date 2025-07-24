@@ -1,8 +1,6 @@
 {
   "dependencies": ["."],
   "graphs": {
-    "sophia_agent": "./agent.py:graph",
     "assistant": "./agent.py:graph"
-  },
-  "env": ".env"
+  }
 }
