@@ -2,5 +2,6 @@
   "dependencies": ["."],
   "graphs": {
     "assistant": "./agent.py:graph"
-  }
+  },
+  "env": ".env"
 }
